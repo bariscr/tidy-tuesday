@@ -238,7 +238,7 @@ p <-
 
 ggdraw(p) +
   draw_text(
-    x = 0.54, y = 0.74,
+    x = 0.52, y = 0.72,
     size = 8,
     family = body_font,
     text = "8\nRaces"
@@ -277,5 +277,10 @@ ggdraw(p) +
     )
   )
 
-
-
+ggsave(
+  filename = file.path("2025", "2025-01-07", paste0("plot", ".png")),
+  height = 12,
+  width = 11,
+  units = "in",
+  dpi = 300
+)
